@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#08090b"/>
+  <path d="M32 8 L52 32 L32 56 L12 32 Z" fill="#e10600"/>
+  <text x="32" y="40" font-family="Impact, sans-serif" font-size="22" fill="#fff" text-anchor="middle">BP</text>
+</svg>
