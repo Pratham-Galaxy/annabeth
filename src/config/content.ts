@@ -2,7 +2,7 @@ import { TEAM } from './team';
 
 export const RADIO_INTRO = {
   lines: [
-    { engineer: 'Engineer to Driver...' },
+    { engineer: 'I am your Engineer' },
     { engineer: 'Radio check.' },
     { copyPrompt: true },
     { engineer: 'Loud and clear.' },
@@ -11,7 +11,7 @@ export const RADIO_INTRO = {
 };
 
 export const TURN_ONE_MESSAGE = {
-  headline: `Happy Birthday Aastha`,
+  headline: `Happy Birthday Besto Pesto`,
   body: `Today isn't about racing.\nToday is about celebrating my favourite driver.`,
 };
 
