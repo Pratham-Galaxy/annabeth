@@ -2,7 +2,7 @@ import { TEAM } from './team';
 
 export const RADIO_INTRO = {
   lines: [
-    { engineer: 'I am your Engineer' },
+    { engineer: 'Engineer to Driver...' },
     { engineer: 'Radio check.' },
     { copyPrompt: true },
     { engineer: 'Loud and clear.' },
@@ -11,7 +11,7 @@ export const RADIO_INTRO = {
 };
 
 export const TURN_ONE_MESSAGE = {
-  headline: `Happy Birthday Besto Pesto`,
+  headline: `Happy Birthday Aastha`,
   body: `Today isn't about racing.\nToday is about celebrating my favourite driver.`,
 };
 
@@ -120,7 +120,7 @@ export const TELEMETRY_DATA = [
 ] as const;
 
 export const DRS_SECRET = {
-  nickname: 'Anabeth',
+  nickname: 'Aster',
   meaning: 'A flower that symbolises patience and a love that does not fade. Also the closest I could get to spelling your name as something only I am allowed to call you.',
 };
 
