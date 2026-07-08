@@ -2,7 +2,7 @@ export const TEAM = {
   engineer: 'Percy',
   driver: 'Aastha',
   nickname: 'Besto Pesto',
-  teamName: 'Besto Racing',
+  teamName: 'Ferarri',
 } as const;
 
 export type SceneId =
