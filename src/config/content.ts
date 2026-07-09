@@ -54,7 +54,7 @@ export const TURN_THREE_TRAITS = [
   },
   {
   title: 'A Great Listener',
-  emoji: 'ice',
+  emoji: 'flame',
   description: 'You somehow survive all my endless yapping, random rants, and overthinking sessions—and you still listen like it's the first time.'
 }
   {
