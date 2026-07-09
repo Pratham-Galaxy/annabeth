@@ -47,7 +47,11 @@ export const TURN_THREE_TRAITS = [
     emoji: 'flame',
     description: 'Even when I lose hope, you somehow fill me with positivity and remind me to keep going.💋'
   },
-  
+  {
+    title: 'Resilient',
+    emoji: 'flame',
+    description: 'Even when I lose hope, you somehow fill me with positivity and remind me to keep going.💋'
+  },
   {
     title: 'Adorable',
     emoji: 'sparkles',
