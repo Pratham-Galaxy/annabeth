@@ -118,7 +118,7 @@ export function DriverLicence({ onDone, progress: _progress }: { onDone: () => v
             Official Document · Parc Fermé
           </div>
           <h3 className="font-display text-xl text-carbon-50 tracking-wide leading-tight max-w-[80%]">
-            Friendship Motorsport Federation
+            Fédération Internationale de l'Automobile
           </h3>
           <p className="font-telemetry text-racing-red text-[10px] tracking-widest uppercase mt-1 mb-5">
             Super Licence · Class Unlimited
