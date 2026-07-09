@@ -32,11 +32,21 @@ Your Race Engineer`,
 };
 
 export const TURN_THREE_TRAITS = [
-  { title: 'Caring', emoji: 'heart', description: 'You care for me like i am your child, its funny though!!' },
-  { title: 'Patient', emoji: 'laugh', description: 'bearing me need a lots of patience, obv uk but thanks for that' },
-  { title: 'Kind', emoji: 'sparkles', description: 'You give people the benefit of the doubt before they even ask for it.' },
-  { title: 'Stubborn', emoji: 'flame', description: 'Once you decide something, the laws of physics file a complaint. And I love it.' },
-  { title: 'Supportive', emoji: 'shield', description: 'You are the pit wall when everything else is falling apart. Always on the radio.' },
+  {
+    title: 'Caring', 
+    emoji: 'heart', 
+    description: 'You care for me like i am your child, its funny though!!' 
+  },
+  { 
+    title: 'Patient', 
+    emoji: 'laugh', 
+    description: 'bearing me need a lots of patience, obv uk but thanks for that' 
+  },
+  {
+    title: 'Adorable',
+    emoji: 'sparkles',
+    description: 'Your smile, your excitement, and the little things you do have a way of making people smile without even trying.'
+  },
 ];
 
 export const TURN_THREE_MISSION = {
