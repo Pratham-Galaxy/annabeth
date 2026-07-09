@@ -43,7 +43,7 @@ export const TURN_THREE_TRAITS = [
     description: 'Putting up with me requires a LOT of patience. You already know that... thanks for never giving up on me ❤️'
   },
   {
-    title: 'Brave',
+    title: 'Resilient',
     emoji: 'flame',
     description: 'Seriously, I mean it. Even when I lose hope, you somehow fill me with positivity and remind me to keep going.'
   },
