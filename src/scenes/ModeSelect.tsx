@@ -26,7 +26,7 @@ export function ModeSelect({ onRace, onPaddock }: { onRace: () => void; onPaddoc
             {TEAM.teamName}
           </div>
           <h1 className="font-display text-5xl md:text-7xl text-carbon-100 leading-none">
-            Friendship <span className="text-racing-red">Grand Prix</span>
+            Monaco <span className="text-racing-red">Grand Prix</span>
           </h1>
           <p className="font-body text-carbon-400 mt-4 max-w-md mx-auto">
             For {TEAM.driver} — from your Race Engineer.
