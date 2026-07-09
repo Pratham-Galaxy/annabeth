@@ -208,7 +208,7 @@ export const HIT_ENGINEER_ACHIEVEMENTS = [
 export const TROPHIES = [
   {
     id: 'champ',
-    title: 'Friendship World Champion',
+    title: 'World Champion',
     material: 'gold',
     story: 'Not awarded for speed. Awarded for staying. For being the one person who never left the team, no matter how bad the season got.',
   },
