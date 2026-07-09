@@ -15,16 +15,25 @@ const ICONS: Record<string, LucideIcon> = {
   shield: Shield,
 };
 
-export function TurnThree({ onDone, progress, tyreColor = '#e10600' }: { onDone: () => void; progress: number; tyreColor?: string }) {
+export function TurnThree({ 
+  onDone, 
+  progress, 
+  tyreColor = '#e10600' 
+}: { 
+  onDone: () => void; 
+  progress: number; 
+  tyreColor?: string 
+}) {
   return (
     <SceneShell>
-      <div className="absolute inset-0 z-0 opacity-25">
+      {/* Background Race Scene */}
+      <div className="absolute inset-0 z-0 opacity-25 pointer-events-none">
         <RaceScene progress={progress} tyreColor={tyreColor} cameraMode="chase" />
       </div>
 
       <SceneHeader corner="Turn 3 · Lap 1" title="What I Admire" tag="Driver Profile" />
 
-      <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center px-6 py-[14vh]">
+      <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center px-6 pt-24 pb-20">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -33,7 +42,8 @@ export function TurnThree({ onDone, progress, tyreColor = '#e10600' }: { onDone:
           Telemetry review · Driver strengths identified
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl w-full">
+        {/* Traits Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl w-full mb-12">
           {TURN_THREE_TRAITS.map((trait, i) => {
             const Icon = ICONS[trait.emoji] ?? Heart;
             return (
@@ -60,12 +70,12 @@ export function TurnThree({ onDone, progress, tyreColor = '#e10600' }: { onDone:
           })}
         </div>
 
-        {/* Mission status */}
+        {/* Mission Status */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="mt-10 hud-panel p-6 max-w-md w-full border-racing-green/40"
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="hud-panel p-6 max-w-md w-full border-racing-green/40 mb-10"
         >
           <div className="flex items-center gap-3 mb-2">
             <CheckCircle2 className="text-racing-green" size={22} />
@@ -89,11 +99,11 @@ export function TurnThree({ onDone, progress, tyreColor = '#e10600' }: { onDone:
           </div>
         </motion.div>
 
+        {/* Continue Button */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="mt-8"
+          transition={{ delay: 1.2 }}
         >
           <ContinueButton onClick={onDone} label="Box Box Box" delay={0.3} />
         </motion.div>
