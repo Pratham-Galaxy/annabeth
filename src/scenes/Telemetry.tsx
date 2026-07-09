@@ -60,7 +60,7 @@ function DriverCard({ driver, side, delay }: { driver: Driver; side: 'left' | 'r
       initial={{ opacity: 0, x: flip ? 30 : -30 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay }}
-      className="hud-panel p-5 relative overflow-hidden"
+      className="hud-panel bg-carbon-950/95 p-5 relative overflow-hidden"
       style={{ borderLeft: flip ? undefined : `3px solid ${driver.color}`, borderRight: flip ? `3px solid ${driver.color}` : undefined }}
     >
       <div className={`flex items-center justify-between font-telemetry text-[9px] tracking-widest uppercase text-carbon-600 mb-3 ${flip ? 'flex-row-reverse' : ''}`}>
@@ -111,7 +111,7 @@ function CircuitMap({ onSelect }: { onSelect: (t: Turn) => void }) {
       initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.2 }}
-      className="hud-panel p-4 flex flex-col items-center justify-center"
+      className="hud-panel bg-carbon-950/95 p-4 flex flex-col items-center justify-center"
     >
       <span className="font-telemetry text-[10px] tracking-[0.25em] uppercase text-carbon-500 mb-2">
         Friendship Circuit
@@ -193,7 +193,7 @@ function VibeTrace() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6 }}
-      className="hud-panel p-5 mt-4"
+      className="hud-panel bg-carbon-950/95 p-5 mt-4"
     >
       <div className="flex items-center justify-between mb-2">
         <span className="font-telemetry text-[10px] tracking-[0.25em] uppercase text-carbon-400 font-semibold">
@@ -264,12 +264,16 @@ export function Telemetry({ onDone, progress: _progress }: { onDone: () => void;
       <SceneHeader corner="Sector 2" title="Bestie Qualifying Analysis" tag="Telemetry Live" />
 
       <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center px-6 py-[10vh]">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 max-w-4xl w-full items-stretch">
-          <DriverCard driver={DRIVERS[0]} side="left" delay={0.1} />
-          <div className="md:w-[280px]">
-            <CircuitMap onSelect={setOpenTurn} />
+        <div className="relative w-full max-w-4xl">
+          {/* solid backing plate — blocks the giant background title from showing through the grid gaps */}
+          <div className="absolute -inset-3 rounded-2xl bg-carbon-950/80 backdrop-blur-md" />
+          <div className="relative grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 w-full items-stretch">
+            <DriverCard driver={DRIVERS[0]} side="left" delay={0.1} />
+            <div className="md:w-[280px]">
+              <CircuitMap onSelect={setOpenTurn} />
+            </div>
+            <DriverCard driver={DRIVERS[1]} side="right" delay={0.2} />
           </div>
-          <DriverCard driver={DRIVERS[1]} side="right" delay={0.2} />
         </div>
 
         <div className="max-w-4xl w-full">
