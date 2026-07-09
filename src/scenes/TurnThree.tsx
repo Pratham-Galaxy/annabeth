@@ -40,7 +40,7 @@ export function TurnThree({
           animate={{ opacity: 1 }}
           className="font-telemetry text-carbon-400 text-sm tracking-widest uppercase mb-10 text-center"
         >
-          Telemetry review · Driver strengths identified
+         
         </motion.p>
 
         {/* Traits Grid */}
