@@ -42,6 +42,11 @@ export const TURN_THREE_TRAITS = [
     emoji: 'laugh', 
     description: 'bearing me need a lots of patience, obv uk but thanks for that' 
   },
+   {
+    title: 'Brave',
+    emoji: 'flame',
+    description: 'You face challenges with courage, even when things are uncertain. seriously bol rha, u keep filling me with positivitym when i lose hopes'
+  },
   {
     title: 'Adorable',
     emoji: 'sparkles',
