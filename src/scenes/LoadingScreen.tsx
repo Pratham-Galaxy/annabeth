@@ -67,7 +67,7 @@ export function LoadingScreen({ onDone }: { onDone: () => void }) {
             Welcome to the
           </motion.div>
           <h1 className="font-display text-6xl md:text-8xl text-carbon-100 leading-none">
-            FRIENDSHIP
+            MONACO
           </h1>
           <h1 className="font-display text-6xl md:text-8xl text-racing-red glow-red leading-none">
             GRAND PRIX
