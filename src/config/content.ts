@@ -40,7 +40,7 @@ export const TURN_THREE_TRAITS = [
   {
     title: 'Patient',
     emoji: 'laugh',
-    description: 'Putting up with me requires a Lots of patience. obv uk that... thanks for never giving up on me ❤️'
+    description: 'Putting up with me requires a lots of patience. obv uk that... thanks for never giving up on me ❤️'
   },
   {
     title: 'Resilient',
