@@ -90,7 +90,7 @@ export function DriverLicence({ onDone, progress: _progress }: { onDone: () => v
     doc.setTextColor(109, 118, 128);
     doc.setFont('courier', 'normal');
     doc.setFontSize(7.5);
-    doc.text('Issued by the Friendship Motorsport Federation · This licence has no expiry.', 30, 180);
+    doc.text('Issued by the Fédération Internationale de Automobile · This licence has no expiry.', 30, 180);
     doc.text('LIC-0001 · BEARER RECOGNISED AS FRIENDSHIP WORLD CHAMPION', 30, 186);
 
     doc.save(`Besto-Pesto-Super-Licence.pdf`);
