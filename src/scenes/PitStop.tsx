@@ -40,7 +40,7 @@ export function PitStop({
 
   return (
     <SceneShell>
-      <SceneHeader corner="Pit Lane" title="Box Box Box" tag="Stop 1" />
+      <SceneHeader corner="Pit Lane" title="Box Box Box" tag="" />
 
       <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center px-6">
         {/* Radio call */}
