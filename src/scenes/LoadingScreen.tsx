@@ -79,8 +79,7 @@ export function LoadingScreen({ onDone }: { onDone: () => void }) {
             className="h-px bg-gradient-to-r from-transparent via-racing-red to-transparent mx-auto mt-6"
           />
           <p className="mt-6 font-telemetry text-carbon-400 tracking-widest text-sm">
-            {TEAM.teamName.toUpperCase()} · ENGINEER: {TEAM.engineer.toUpperCase()} · DRIVER:{' '}
-            {TEAM.driver.toUpperCase()}
+            ENGINEER: {TEAM.engineer.toUpperCase()}
           </p>
         </motion.div>
       )}
