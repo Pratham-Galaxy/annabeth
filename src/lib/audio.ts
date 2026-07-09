@@ -21,6 +21,7 @@ class AudioManager {
   private unlocked = false;
   private muted = false;
   private loaded: Partial<Record<SoundKey, Howl>> = {};
+  private urlHowls = new Map<string, Howl>();
   private listeners = new Set<(muted: boolean) => void>();
 
   private ensureCtx(): AudioContext | null {
@@ -208,6 +209,28 @@ class AudioManager {
     this.tone(523, 0.2, 'square', 0.1);
     this.tone(659, 0.2, 'square', 0.1, 0.15);
     this.tone(784, 0.4, 'square', 0.12, 0.3);
+  }
+
+  playUrl(url: string): Promise<void> {
+    return new Promise((resolve) => {
+      if (this.muted) {
+        resolve();
+        return;
+      }
+      let h = this.urlHowls.get(url);
+      if (!h) {
+        h = new Howl({ src: [url], html5: true, format: ['webm', 'mp3'] });
+        this.urlHowls.set(url, h);
+      }
+      h.once('end', () => resolve());
+      h.once('loaderror', () => resolve());
+      h.play();
+    });
+  }
+
+  stopUrl(url: string) {
+    const h = this.urlHowls.get(url);
+    if (h) h.stop();
   }
 }
 
