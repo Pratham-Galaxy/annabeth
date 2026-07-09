@@ -35,7 +35,7 @@ export const TURN_THREE_TRAITS = [
   {
     title: 'Caring',
     emoji: 'heart',
-    description: 'You care for me like I’m your child. It’s honestly funny sometimes!!'
+    description: 'You care for me like I’m your child. It’s honestly funny sometimes!! eheh!!'
   },
   {
     title: 'Patient',
