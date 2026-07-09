@@ -42,7 +42,7 @@ export function DriverLicence({ onDone, progress: _progress }: { onDone: () => v
     doc.setTextColor(244, 244, 248);
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(24);
-    doc.text('Fédération Internationale de l'Automobile', 30, 44);
+    doc.text('Fédération Internationale de lAutomobile', 30, 44);
 
     doc.setTextColor(232, 18, 28);
     doc.setFont('courier', 'normal');
