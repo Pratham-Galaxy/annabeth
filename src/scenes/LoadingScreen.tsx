@@ -129,7 +129,7 @@ export function LoadingScreen({ onDone }: { onDone: () => void }) {
       )}
 
       <p className="absolute bottom-6 font-telemetry text-carbon-600 text-xs tracking-widest">
-        BESTO RACING MOTORSPORT
+        Scuderia Ferrari
       </p>
     </div>
   );
