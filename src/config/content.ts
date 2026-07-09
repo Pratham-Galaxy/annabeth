@@ -316,9 +316,9 @@ export const DRIVERS = [
     replyTime: '0:00.9',
     gap: '−0.3s',
     stats: [
-      { label: 'Chaos Energy', value: 81 },
-      { label: 'Overthinking', value: 22 },
-      { label: 'Petty Comebacks', value: 63 },
+      { label: 'Chaos Energy', value: 100 },
+      { label: 'Overthinking', value: 50 },
+      { label: 'Petty Comebacks', value: 85 },
     ],
   },
   {
@@ -332,8 +332,8 @@ export const DRIVERS = [
     gap: '+0.3s',
     stats: [
       { label: 'Chaos Energy', value: 88 },
-      { label: 'Overthinking', value: 14 },
-      { label: 'Petty Comebacks', value: 71 },
+      { label: 'Overthinking', value: 100 },
+      { label: 'Petty Comebacks', value: 81 },
     ],
   },
 ] as const;
