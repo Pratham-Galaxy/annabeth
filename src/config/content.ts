@@ -33,27 +33,31 @@ Your Race Engineer`,
 
 export const TURN_THREE_TRAITS = [
   {
-    title: 'Caring', 
-    emoji: 'heart', 
-    description: 'You care for me like i am your child, its funny though!!' 
+    title: 'Caring',
+    emoji: 'heart',
+    description: 'You care for me like I’m your child. It’s honestly funny sometimes!!'
   },
-  { 
-    title: 'Patient', 
-    emoji: 'laugh', 
-    description: 'bearing me need a lots of patience, obv uk but thanks for that' 
+  {
+    title: 'Patient',
+    emoji: 'laugh',
+    description: 'Putting up with me requires a LOT of patience. You already know that... thanks for never giving up on me ❤️'
   },
-   {
+  {
     title: 'Brave',
     emoji: 'flame',
-    description: 'You face challenges with courage, even when things are uncertain. seriously bol rha, u keep filling me with positivitym when i lose hopes'
+    description: 'Seriously, I mean it. Even when I lose hope, you somehow fill me with positivity and remind me to keep going.'
   },
   {
     title: 'Adorable',
     emoji: 'sparkles',
-    description: 'Your smile, your excitement, and the little things you do have a way of making people smile without even trying.'
+    description: 'Your smile, your excitement, and all your little habits have a way of making everyone around you smile without even trying.'
+  },
+  {
+    title: 'Partner in Crime',
+    emoji: 'shield',
+    description: 'From the dumbest ideas to the best memories, life is simply more fun because you’re my forever partner in crime.'
   },
 ];
-
 export const TURN_THREE_MISSION = {
   mission: 'Continue annoying Driver forever.',
   status: 'Accepted.',
