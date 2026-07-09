@@ -102,7 +102,7 @@ export function TrophyRoom({ onDone, progress: _progress }: { onDone: () => void
           transition={{ delay: 1 }}
           className="mt-10"
         >
-          <ContinueButton onClick={onDone} label="Driver Licence" delay={0.2} />
+          <ContinueButton onClick={onDone} label="Final Lap" delay={0.2} />
         </motion.div>
       </div>
 

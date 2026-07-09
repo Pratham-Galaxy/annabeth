@@ -34,10 +34,7 @@ export const RACE_ORDER: SceneId[] = [
   'telemetry',
   'drs',
   'memory-circuit',
-  'mini-games',
-  'team-radio',
   'trophy-room',
-  'licence',
   'final-lap',
   'secret-ending',
 ];

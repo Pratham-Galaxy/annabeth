@@ -119,10 +119,7 @@ export default function App() {
         return <DRSZone onDone={goNext} progress={progress} tyreColor={tyreColor} />;
       case 'memory-circuit':
         return <MemoryCircuit onDone={goNext} progress={progress} tyreColor={tyreColor} />;
-      case 'mini-games':
-        return <MiniGames onDone={goNext} progress={progress} />;
-      case 'team-radio':
-        return <TeamRadio onDone={goNext} progress={progress} />;
+      
       case 'trophy-room':
         return <TrophyRoom onDone={goNext} progress={progress} />;
       case 'licence':
