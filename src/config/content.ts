@@ -300,3 +300,64 @@ export const PADDOCK_MODULES = [
   { id: 'games', label: 'Mini Games', icon: 'gamepad-2' },
   { id: 'future', label: 'Future Memories', icon: 'infinity' },
 ] as const;
+
+
+// Add these exports to your existing `config/content.ts`
+// Colors are hardcoded hex so they render correctly inside inline SVG (no Tailwind class needed there).
+
+export const DRIVERS = [
+  {
+    id: 'aastha',
+    position: 1,
+    name: 'AASTHA',
+    tag: 'MAIN CHARACTER',
+    team: 'TEAM CHAOS-FERRARI',
+    color: '#e8121c', // racing red
+    replyTime: '0:00.9',
+    gap: '−0.3s',
+    stats: [
+      { label: 'Chaos Energy', value: 81 },
+      { label: 'Overthinking', value: 22 },
+      { label: 'Petty Comebacks', value: 63 },
+    ],
+  },
+  {
+    id: 'pratham',
+    position: 2,
+    name: 'PRATHAM',
+    tag: 'CO-MAIN CHARACTER',
+    team: 'TEAM CHAOS-FERRARI',
+    color: '#ffd400', // racing yellow
+    replyTime: '0:01.2',
+    gap: '+0.3s',
+    stats: [
+      { label: 'Chaos Energy', value: 88 },
+      { label: 'Overthinking', value: 14 },
+      { label: 'Petty Comebacks', value: 71 },
+    ],
+  },
+] as const;
+
+// x/y are coordinates on the 300x260 circuit viewBox in Telemetry.tsx.
+// labelDx/labelDy nudge the text so it doesn't collide with the track or other labels.
+export const CIRCUIT_TURNS = [
+  { id: 't1', x: 50, y: 210, label: 'WE MET', labelDx: -42, labelDy: 28, memory: 'Replace with the real story of how you two met.' },
+  { id: 't2', x: 90, y: 105, label: 'FIRST FIGHT', labelDx: 6, labelDy: -4, memory: 'Replace with the story of your first real fight — and how it ended.' },
+  { id: 't3', x: 130, y: 65, label: 'INSIDE JOKE', labelDx: -6, labelDy: -12, memory: 'Replace with the origin of your best running joke.' },
+  { id: 't4', x: 190, y: 20, label: 'THE TRIP', labelDx: -30, labelDy: -8, memory: 'Replace with the story of your most chaotic trip together.' },
+  { id: 't5', x: 255, y: 55, label: 'MOVED AWAY', labelDx: 8, labelDy: 4, memory: 'Replace with what happened when distance came into the picture.' },
+  { id: 't6', x: 172, y: 132, label: 'LOW POINT', labelDx: 8, labelDy: -6, memory: 'Replace with a rough patch you two got through.' },
+  { id: 't7', x: 110, y: 182, label: 'REUNITED', labelDx: -12, labelDy: 20, memory: 'Replace with the story of coming back together.' },
+] as const;
+
+// Two parallel series (index 0 = Aastha, index 1 = Pratham), each 0-100, same length as `phases`.
+export const VIBE_TRACE = {
+  phases: ['we met', 'growing pains', 'the trip', 'long distance', 'reunited', 'now'],
+  series: [
+    [46, 62, 34, 70, 82, 88],
+    [43, 58, 38, 66, 78, 85],
+  ],
+} as const;
+
+// 0-100 scale, same length as VIBE_TRACE phases — positive-leaning values mean Aastha brought more chaos that phase.
+export const DELTA_TRACE = [58, 66, 40, 74, 52, 60];
