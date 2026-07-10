@@ -6,7 +6,7 @@ export const RADIO_INTRO = {
     { engineer: 'Radio check.' },
     { copyPrompt: true },
     { engineer: 'Loud and clear.' },
-    { engineer: `Happy Birthday, ${TEAM.nickname}.` },
+    { engineer: `Get ready Astoo` },
   ],
 };
 
@@ -21,7 +21,7 @@ to my most annoyable and only kuchu puchu bestieeeeeeeee
 
 first of all gomen nasai to u, bohot tang kiya yr is sal, and arigatou neee for still staying with me.
 u r so so so much imp to me, i should highlight u with yellow marker, hehe, 😂
-uk n i have ppls but tere jitta maza kisi aur ke sath nhi ata, when we had those fight mera to muh hi utar gaya tha but now i am happy, tbh more than happy.
+there are many ppl but tere jitta maza kisi aur ke sath nhi ata, when we had those fight mera to muh hi utar gaya tha but now i am happy, tbh more than happy.
 
 yrrr 4 sal ho gye we been friends, woah, kitne instantly besties ban gye the ham, the way we are we are diff ppls but still we vibe together, itna ki ghanto ghanto bat kr lete hai hai pata nhi chalta. sach batara i am not this overdramatic but tere samne alg hi drama krne lgta mai , nakhre hi badh jate😗. itti mazi ati n apni convos me, like kal hi kha se kha topic a gaya , no sense still kitta maza aya n.
 khaaa f1 jacket se ham ladkiyo pe a gaye, to frogs n rats😙.
