@@ -14,6 +14,7 @@ Deno.serve(async (req: Request) => {
 
   try {
     const { complaint, verdict, driverName } = await req.json();
+    console.log("Received complaint submission:", { complaint, verdict, driverName });
 
     if (!complaint || typeof complaint !== "string") {
       return new Response(
@@ -33,6 +34,8 @@ Deno.serve(async (req: Request) => {
       .eq("id", 1)
       .maybeSingle();
 
+    console.log("app_settings lookup:", { settings, settingsError });
+
     if (settingsError || !settings?.complaint_email) {
       return new Response(
         JSON.stringify({ error: "No complaint_email configured in app_settings" }),
@@ -41,6 +44,7 @@ Deno.serve(async (req: Request) => {
     }
 
     const recipientEmail = settings.complaint_email;
+    console.log("Sending to FormSubmit for recipient:", recipientEmail);
 
     // Send email via FormSubmit.co (no signup, no API key needed)
     const formData = new FormData();
@@ -60,19 +64,26 @@ Deno.serve(async (req: Request) => {
       }
     );
 
+    const emailResponseText = await emailResponse.text();
+    console.log("FormSubmit response:", {
+      status: emailResponse.status,
+      ok: emailResponse.ok,
+      body: emailResponseText,
+    });
+
     if (!emailResponse.ok) {
-      const errText = await emailResponse.text();
       return new Response(
-        JSON.stringify({ error: "Email send failed", detail: errText }),
+        JSON.stringify({ error: "Email send failed", detail: emailResponseText }),
         { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
     return new Response(
-      JSON.stringify({ success: true, sent_to: recipientEmail }),
+      JSON.stringify({ success: true, sent_to: recipientEmail, formsubmit_response: emailResponseText }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (err) {
+    console.error("send-complaint-email error:", err);
     return new Response(
       JSON.stringify({ error: err.message || "Internal error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
