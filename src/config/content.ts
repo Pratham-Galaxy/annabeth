@@ -16,8 +16,18 @@ export const TURN_ONE_MESSAGE = {
 };
 
 export const TURN_TWO_LETTER = {
-  text: `Dear Pestos
-  `,
+  text: `Dear Besto Pesto,
+
+I built you a race track instead of a card.
+
+Every corner is a memory I didn't want to forget.
+You watched a sport you barely understood, just so I'd have someone to talk to.
+
+That's not a hobby. That's a teammate.
+
+Happy birthday, Driver. The garage is always open.
+
+Your Race Engineer`,
   signature: 'Your Race Engineer',
 };
 
@@ -134,8 +144,8 @@ export const TELEMETRY_DATA = [
 ] as const;
 
 export const DRS_SECRET = {
-  nickname: 'Kero',
-  meaning: 'Its somethin u have to google to know what it mean, but its cute and suits u. i can call u kero-chan, eheh😝. i definetly know tujhe ye psnd nhi ara🤣🤣',
+  nickname: 'Anabeth',
+  meaning: 'A flower that symbolises patience and a love that does not fade. Also the closest I could get to spelling your name as something only I am allowed to call you.',
 };
 
 export const MEMORY_CORNERS = [
@@ -143,19 +153,19 @@ export const MEMORY_CORNERS = [
     id: 'm1',
     corner: 'Turn 1',
     title: 'The First Race',
-    tag: 'pizza',
-    message: 'first time yad hai ham mile the kitna funny tha, mai neware aur shashank pizza khane gye the aur vha tu a gyi, kitna awkard hua tha mai, i didnt even look into your eyes or talk and ab dekh bhai, kitna bak bak krte, random vcs, full bakchodi',
+    tag: 'F1',
+    message: 'The first time you sat through a race with me. You asked what DRS was. I explained for 20 minutes. You said "cool" and asked for snacks. I knew then this was going to be a forever thing.',
     image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'pizza',
+    placeholder: 'Photo: Replace with a screenshot of the first race we watched together.',
   },
   {
     id: 'm2',
     corner: 'Turn 2',
-    title: 'Haunted House',
-    tag: 'horror',
-    message: 'yad hai ham mere bday ke party ke liye eternity gye the vha pe horror house me kya phati thi hamari, kya chillaye the ham😂. vha pe sb hamko dekh ke dar gye the, shyd bhoot bhi dar gaya hoga',
+    title: 'The Percy Jackson Incident',
+    tag: 'Percy Jackson',
+    message: 'You argued that Percy could absolutely beat a Formula 1 driver in a chariot race. I said the driver would win. We did not speak for an hour. I was right. You were also right. The chariot was the real winner.',
     image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
-    placeholder: 'phasmophobia',
+    placeholder: 'Photo: Replace with your Percy Jackson book screenshot or our chat about it.',
   },
   {
     id: 'm3',
