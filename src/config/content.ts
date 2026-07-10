@@ -155,7 +155,7 @@ export const MEMORY_CORNERS = [
     tag: 'horror',
     message: 'yad hai ham mere bday ke party ke liye eternity gye the vha pe horror house me kya phati thi hamari, kya chillaye the ham😂. vha pe sb hamko dekh ke dar gye the, shyd bhoot bhi dar gaya hoga',
     image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
-    placeholder: 'Photo: Replace with your Percy Jackson book screenshot or our chat about it.',
+    placeholder: 'phasmophobia',
   },
   {
     id: 'm3',
