@@ -257,12 +257,7 @@ export const TROPHIES = [
     material: 'gold',
     story: 'No expiry. No exit clause. No trade window. You are stuck with this team forever. Sign here, here, and here.',
   },
-  {
-    id: 'survivor',
-    title: 'Engineer Survivor',
-    material: 'silver',
-    story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
-  },
+  
   {
     id: 'safetycar',
     title: 'Safety Car',
