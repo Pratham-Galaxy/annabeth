@@ -190,7 +190,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 6',
     title: 'The Podium Promise',
     tag: 'Emotional',
-    message: 'Our recent fight, it was such a childish behaviour of me, meri life itti fucked up ho gyi thi, but u stayed, even after so many fights u came back, i never thought that would u  came back. uk jis din tera call aya tha, i was in living room, meri life ki sbse biggest smile ayi thi us din, khushi khushi me call hi nhi uthaya tha😂. everyone was like kya hua, aaise hs kyu rha hai😏',
+    message: 'Our recent fight, it was such a childish behaviour of me, meri life itti fucked up ho gyi thi, but u stayed, even after so many fights u came back, i never thought that would u  came back after my rudy behaviour. uk jis din tera call aya tha, i was in living room, meri life ki sbse biggest smile ayi thi us din, khushi khushi me call hi nhi uthaya tha😂. everyone was like kya hua, aaise hs kyu rha hai😏',
     image: 'https://images.pexels.com/photos/3647985/pexels-photo-3647985.jpeg',
     placeholder: 'Our Redemption Arc',
   },
