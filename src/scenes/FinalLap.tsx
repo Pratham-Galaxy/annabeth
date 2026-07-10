@@ -86,7 +86,7 @@ export function FinalLap({ onDone, progress, tyreColor = '#e10600' }: { onDone: 
                 transition={{ delay: 0.5 }}
                 className="font-display text-2xl md:text-4xl text-carbon-100 mt-4"
               >
-                YOU ARE THE WORLD CHAMPION!
+                YOU ARE THE WORLD CHAMPION!!
               </motion.p>
               {/* Podium */}
               <div className="flex items-end justify-center gap-3 mt-10">
