@@ -143,7 +143,7 @@ export const MEMORY_CORNERS = [
     id: 'm1',
     corner: 'Turn 1',
     title: 'The First Race',
-    tag: 'F1',
+    tag: 'pizza',
     message: 'first time yad hai ham mile the kitna funny tha, mai neware aur shashank pizza khane gye the aur vha tu a gyi, kitna awkard hua tha mai, i didnt even look into your eyes or talk and ab dekh bhai, kitna bak bak krte, random vcs, full bakchodi',
     image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'pizza',
