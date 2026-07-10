@@ -181,7 +181,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 5',
     title: 'My Best Memory of US',
     tag: 'love',
-    message: 'You once described my life as "controlled chaos with a pit stop budget." I have never recovered. I now think about that sentence during real pit stops.',
+    message: '',
     image: 'https://images.pexels.com/photos/7187184/pexels-photo-7187184.jpeg',
     placeholder: 'U came to meet me',
   },
