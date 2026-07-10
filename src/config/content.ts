@@ -165,7 +165,7 @@ export const MEMORY_CORNERS = [
     tag: 'Late Night',
     message: 'You called at 2am to ask if I was okay. I said yes. You stayed on the call anyway for an hour and a half saying nothing. It was the most important conversation we ever had.',
     image: 'https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg',
-    placeholder: 'Photo: Replace with a screenshot of that late call log.',
+    placeholder: 'Creeps',
   },
   {
     id: 'm4',
