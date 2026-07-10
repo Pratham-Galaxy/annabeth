@@ -264,9 +264,9 @@ export const TROPHIES = [
     story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
   },
   {
-    id: 'fastestlap',
-    title: 'Fastest Smile',
-    material: 'silver',
+    id: 'safetycar',
+    title: 'Safety Car',
+    material: 'gold',
     story: 'For slowing me down whenever I was overthinking, panicking, or making terrible decisions. Somehow, you always know exactly when to tell me to breathe and when to laugh at me instead.',
   },
   {
