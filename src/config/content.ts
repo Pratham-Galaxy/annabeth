@@ -146,7 +146,7 @@ export const MEMORY_CORNERS = [
     title: 'The First Race',
     tag: 'pizza',
     message: 'yad hai first time ham mile the, mai shashank neware pizza khane gye the, tu ayi thi vha, it was awkard for me, i didnt even look at u, but ab dekh bhai full bakchodi, random vcs, calls, kitta bak bak krte ham',
-    image: 'https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg',
+    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'Pizza',
   },
   {
@@ -191,7 +191,7 @@ export const MEMORY_CORNERS = [
     title: 'The Podium Promise',
     tag: 'Emotional',
     message: 'Our recent fight, it was such a childish behaviour of me, meri life itti fucked up ho gyi thi, but u stayed, even after so many fights u came back, i never thought that would u  came back after my rudy behaviour, gomen nasai kero-chan. uk jis din tera call aya tha, i was in living room, meri life ki sbse biggest smile ayi thi us din, after seeing ur name, khushi khushi me call hi nhi uthaya tha😂. everyone was like kya hua, aaise hs kyu rha hai😏',
-    image: 'https://images.pexels.com/photos/3647985/pexels-photo-3647985.jpeg',
+    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'Our Redemption Arc',
   },
 ] as const;
