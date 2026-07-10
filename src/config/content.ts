@@ -270,7 +270,7 @@ export const TROPHIES = [
     story: 'For slowing me down whenever I was overthinking, panicking, or making terrible decisions. Somehow, you always know exactly when to tell me to breathe and when to laugh at me instead.',
   },
   {
-    id: 'survivor',
+    id: 'pitcrew',
     title: 'Fastest Smile',
     material: 'silver',
     story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
