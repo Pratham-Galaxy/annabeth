@@ -273,7 +273,7 @@ export const TROPHIES = [
     id: 'pitcrew',
     title: 'Ultimate Pit Crew',
     material: 'silver',
-    story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
+    story: 'Every driver needs a team that gets them back on track. Whenever life got messy, you were always there to help, encourage, or simply stay. Thank you for always being in my corner..',
   },
 ] as const;
 
