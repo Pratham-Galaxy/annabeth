@@ -163,7 +163,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 3',
     title: '3 AM',
     tag: 'Late Night',
-    message: 'You called at 2am to ask if I was okay. I said yes. You stayed on the call anyway for an hour and a half saying nothing. It was the most important conversation we ever had.',
+    message: 'woh din yad hai, ham almost 6 hr bat kiye the, i was shocked ham itta kaise bol skte but ab to normal ho gaya hai, mujhe acche se yad hai ham anjali ke creepy snaps dekhe the usme, us bkl ne hath kat di thi, plus pure gossips',
     image: 'https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg',
     placeholder: 'Creeps',
   },
