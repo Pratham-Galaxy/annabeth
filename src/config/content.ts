@@ -147,7 +147,7 @@ export const MEMORY_CORNERS = [
     tag: 'pizza',
     message: 'The first time you sat through a race with me. You asked what DRS was. I explained for 20 minutes. You said "cool" and asked for snacks. I knew then this was going to be a forever thing.',
     image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'Photo: Replace with a screenshot of the first race we watched together.',
+    placeholder: 'Pizza',
   },
   {
     id: 'm2',
