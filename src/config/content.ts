@@ -155,7 +155,7 @@ export const MEMORY_CORNERS = [
     title: 'Haunted House',
     tag: 'horror',
     message: 'yad hai mere bday ki party ke liye eternity gye the, vha pe horror house me kitti phati thi hamari, kitta chike the ham, sab hamko dekh ke dar gye the mujhe lgta bhoot bhi dar gaya hoga, kitta maza aya tha😂',
-    image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
+    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'Phasmophobia',
   },
   {
