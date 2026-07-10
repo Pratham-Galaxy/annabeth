@@ -139,7 +139,7 @@ export function MemoryCircuit({
             transition={{ delay: 0.5 }}
             className="mt-6"
           >
-            <ContinueButton onClick={onDone} label="Mini Games" />
+            <ContinueButton onClick={onDone} label="Trophy Room" />
           </motion.div>
         )}
       </div>

@@ -40,7 +40,7 @@ export function PitStop({
 
   return (
     <SceneShell>
-      <SceneHeader corner="Pit Lane" title="Box Box Box" tag="Stop 1" />
+      <SceneHeader corner="Pit Lane" title="Box Box Box" tag="" />
 
       <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center px-6">
         {/* Radio call */}
@@ -91,10 +91,10 @@ export function PitStop({
               animate={{ opacity: 1, y: 0 }}
               className="font-display text-3xl md:text-5xl text-carbon-100 mb-3"
             >
-              Choose Your Compound
+             
             </motion.h3>
             <p className="font-telemetry text-carbon-400 text-sm tracking-widest uppercase mb-10">
-              Each compound comes with a personality report
+              Choose Your Compound
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
