@@ -135,7 +135,7 @@ export const TELEMETRY_DATA = [
 
 export const DRS_SECRET = {
   nickname: 'Kero',
-  meaning: 'Its somethin u have to google to know what it mean, but its cute and suits u. i can call u kero-chan, eheh',
+  meaning: 'Its somethin u have to google to know what it mean, but its cute and suits u. i can call u kero-chan, eheh. i definetly know tujhe ye psnd nhi ara🤣🤣',
 };
 
 export const MEMORY_CORNERS = [
