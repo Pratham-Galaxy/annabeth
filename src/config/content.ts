@@ -145,7 +145,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 1',
     title: 'The First Race',
     tag: 'pizza',
-    message: 'The first time you sat through a race with me. You asked what DRS was. I explained for 20 minutes. You said "cool" and asked for snacks. I knew then this was going to be a forever thing.',
+    message: 'yad hai first time ham mile the, mai shashank neware pizza khane gye the, tu ayi thi vha, it was awkard for me, i didnt even look at u, but ab dekh bhai full bakchodi, random vcs, calls, kitta bak bak krte ham ',
     image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'Pizza',
   },
