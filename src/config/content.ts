@@ -16,8 +16,30 @@ export const TURN_ONE_MESSAGE = {
 };
 
 export const TURN_TWO_LETTER = {
-  text: `Dear Besto Pesto,
+  text: `Happy Birthday Pestoooooooo!!!🥳🥳🍰🎂🎂🎉🎉🎊🎊
+to my most annoyable and only kuchu puchu bestieeeeeeeee
 
+first of all gomen nasai to u, bohot tang kiya yr is sal, and arigatou neee for still staying with me.
+u r so so so much imp to me, i should highlight u with yellow marker, hehe, 😂
+uk i am ppls but tere jitta maza kisi aur ke sath nhi ata, when we had those fight mera to muh hi utar gaya tha but now i am happy, tbh more than happy.
+
+yrrr 4 sal ho gye we been friends, woah, kitne instantly besties ban gye the ham, the way we are we are diff ppls but still we vibe together, itna ki ghanto ghanto bat kr lete hai hai pata nhi chalta. sach batara i am not this overdramatic but tere samne alg hi drama krne lgta mai , nakhre hi badh jate😗. itti mazi ati n apni convos me, like kal hi kha se kha topic a gaya , no sense still kitta maza aya n.
+khaaa f1 jacket se ham ladkiyo pe a gaye, to frogs n rats😙.
+
+pata nhi ye tarif hai ki nhi but u r versatile to me, kabhi meri maaa ban jati bhai tu, kitta dat ti hai, sunna padhta hai mujhe🥲
+aur kabhi kabhi itti cute ban jati like meri hi beti ho, mostly to ham bs ladte jhagadte rehte, uska bhi alg hi maza hai.
+tu hamesha meri ajeeb ajeeb chizo ko support krti, f1 dekeege bola chalo, got dekhna hai, chalo, like pokemon khelte, chalo
+like i am so so so grateful to have u, muahhhhhhhhhhhhhhh😘💋. bs kisi din mst horror dekhege ham.
+
+but bhai tu kitti bdi ho gyi hai 20 sal ka kaddu ban gyi hai, mai tere height ka mazak banata but utti bhi choti nhi hai tu.😏
+i wish tera ye aur age ka bday mst jaye and tu mst fit n fine rhee, smart to hai hi tu😏(ik jyada tarif hori) seh le thoda aj.
+gift me try kruga is sal thoda kam tnsn du tujhe. ik bht tnsn deta mai aur ufffffff mere nakhre😂😂😂.
+kash me teri lesbo-shit wali fantasies puri kr pata😂🤌🤌🥰🙂, hold it for next time, i will one day
+
+honestly sayin, jo hamara 1.5 month ka fight chala hai n, it was imp ig, teri worth pata chali mujhe, ki u r irreplacable to me, aaisa lg rha tha kisi ne meri sari bakchodi hi chin li, 
+
+love u mereeeeeeeeeeeee pestooooooooooooooooooooooooooooo!!!!!!!!!!!!!!!!!!!!!!!!!💋💋💖
+aaise hi apni krupa banaye rakhi mujhpe😙😙😙😗😗
 `,
   signature: 'Your Race Engineer',
 };
