@@ -135,7 +135,7 @@ export const TELEMETRY_DATA = [
 ] as const;
 
 export const DRS_SECRET = {
-  nickname: 'Anabeth',
+  nickname: 'Kero',
   meaning: 'A flower that symbolises patience and a love that does not fade. Also the closest I could get to spelling your name as something only I am allowed to call you.',
 };
 
