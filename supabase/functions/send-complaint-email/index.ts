@@ -1,4 +1,5 @@
-import { createClient } from "npm:@supabase/supabase-js@2";
+import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { createClient } from "npm:@supabase/supabase-js@2.57.4";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -15,17 +16,17 @@ Deno.serve(async (req: Request) => {
     const { complaint, verdict, driverName } = await req.json();
 
     if (!complaint || typeof complaint !== "string") {
-      return new Response(JSON.stringify({ error: "Missing complaint text" }), {
-        status: 400,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
+      return new Response(
+        JSON.stringify({ error: "Missing complaint text" }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
     }
 
-    const supabase = createClient(
-      Deno.env.get("SUPABASE_URL")!,
-      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
-    );
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+    const supabase = createClient(supabaseUrl, serviceKey);
 
+    // Read the recipient email from app_settings
     const { data: settings, error: settingsError } = await supabase
       .from("app_settings")
       .select("complaint_email")
@@ -33,50 +34,45 @@ Deno.serve(async (req: Request) => {
       .maybeSingle();
 
     if (settingsError || !settings?.complaint_email) {
-      console.error("Settings error:", settingsError);
       return new Response(
-        JSON.stringify({ error: "No complaint_email configured" }),
+        JSON.stringify({ error: "No complaint_email configured in app_settings" }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
-    const formBody = new URLSearchParams();
-    formBody.append("name", "F1 Complaint Box");
-    formBody.append("_subject", `New complaint from ${driverName || "Driver"}`);
-    formBody.append("_template", "table");
-    formBody.append("Driver", driverName || "Aastha");
-    formBody.append("Complaint", complaint);
-    formBody.append("Verdict", verdict || "Pending");
-    formBody.append("Submitted_At", new Date().toISOString());
+    const recipientEmail = settings.complaint_email;
+
+    // Send email via FormSubmit.co (no signup, no API key needed)
+    const formData = new FormData();
+    formData.append("name", "F1 Complaint Box");
+    formData.append("_subject", `New complaint from ${driverName || "Driver"}`);
+    formData.append("_template", "table");
+    formData.append("Driver", driverName || "Aastha");
+    formData.append("Complaint", complaint);
+    formData.append("Verdict", verdict || "Pending");
+    formData.append("Submitted_At", new Date().toISOString());
 
     const emailResponse = await fetch(
-      `https://formsubmit.co/ajax/${settings.complaint_email}`,
+      `https://formsubmit.co/ajax/${recipientEmail}`,
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          "Accept": "application/json",
-        },
-        body: formBody,
+        body: formData,
       }
     );
 
-    const responseText = await emailResponse.text();
-    console.log("FormSubmit response:", { status: emailResponse.status, body: responseText });
-
     if (!emailResponse.ok) {
+      const errText = await emailResponse.text();
       return new Response(
-        JSON.stringify({ error: "Email send failed", detail: responseText }),
+        JSON.stringify({ error: "Email send failed", detail: errText }),
         { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
     return new Response(
-      JSON.stringify({ success: true, sent_to: settings.complaint_email }),
+      JSON.stringify({ success: true, sent_to: recipientEmail }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (err) {
-    console.error("send-complaint-email error:", err);
     return new Response(
       JSON.stringify({ error: err.message || "Internal error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }

@@ -24,61 +24,74 @@ export function DriverLicence({ onDone, progress: _progress }: { onDone: () => v
     doc.setFillColor(8, 9, 11);
     doc.rect(0, 0, 297, 210, 'F');
 
-    // Single thin border
+    // Single thin border — no double frame
     doc.setDrawColor(232, 18, 28);
     doc.setLineWidth(0.6);
-    doc.rect(24, 24, 249, 162);
+    doc.rect(16, 16, 265, 178);
+
+    // Left accent bar
+    doc.setFillColor(232, 18, 28);
+    doc.rect(16, 16, 1.4, 178, 'F');
 
     // Eyebrow + header
     doc.setTextColor(109, 118, 128);
     doc.setFont('courier', 'normal');
     doc.setFontSize(9);
-    doc.text('OFFICIAL DOCUMENT · PARC FERME', 40, 42);
+    doc.text('OFFICIAL DOCUMENT · PARC FERME', 30, 32);
 
     doc.setTextColor(244, 244, 248);
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(24);
-    doc.text('Fédération Internationale de Automobile', 40, 54);
+    doc.text('Fédération Internationale de Automobile', 30, 44);
 
     doc.setTextColor(232, 18, 28);
     doc.setFont('courier', 'normal');
     doc.setFontSize(10);
-    doc.text('SUPER LICENCE · CLASS: UNLIMITED', 40, 61);
+    doc.text('SUPER LICENCE · CLASS: UNLIMITED', 30, 51);
 
     // Divider
     doc.setDrawColor(35, 35, 47);
     doc.setLineWidth(0.3);
-    doc.line(40, 70, 257, 70);
+    doc.line(30, 58, 267, 58);
 
-    // Fields — full width, minimal rows
-    let y = 84;
+    // Photo placeholder box
+    doc.setDrawColor(58, 64, 71);
+    doc.setFillColor(20, 20, 31);
+    doc.roundedRect(30, 68, 48, 58, 1, 1, 'FD');
+    doc.setTextColor(109, 118, 128);
+    doc.setFont('courier', 'normal');
+    doc.setFontSize(8);
+    doc.text('PHOTO', 54, 99, { align: 'center' });
+
+    // Fields
+    let y = 74;
     FIELDS.forEach((f) => {
       doc.setTextColor(109, 118, 128);
       doc.setFont('courier', 'normal');
-      doc.setFontSize(8);
-      doc.text(f.label.toUpperCase(), 40, y);
+      doc.setFontSize(7);
+      doc.text(f.label.toUpperCase(), 92, y);
 
       doc.setTextColor(244, 244, 248);
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(13);
-      doc.text(f.value, 257, y, { align: 'right' });
+      doc.text(f.value, 92, y + 6);
 
       doc.setDrawColor(28, 28, 38);
       doc.setLineWidth(0.2);
-      doc.line(40, y + 4, 257, y + 4);
-      y += 15;
+      doc.line(92, y + 9, 262, y + 9);
+      y += 15.5;
     });
 
     // Footer
     doc.setDrawColor(35, 35, 47);
     doc.setLineWidth(0.3);
-    doc.line(40, 172, 257, 172);
+    doc.line(30, 172, 267, 172);
 
     doc.setTextColor(109, 118, 128);
     doc.setFont('courier', 'normal');
     doc.setFontSize(7.5);
-    doc.text('Issued by the Fédération Internationale de Automobile · This licence has no expiry.', 40, 180);
-    doc.text('LIC-0001 · BEARER RECOGNISED AS FRIENDSHIP WORLD CHAMPION', 40, 186);
+    doc.text('Issued by the Fédération Internationale de Automobile · This licence has no expiry.', 30, 180);
+    doc.text('LIC-0001 · BEARER RECOGNISED AS FRIENDSHIP WORLD CHAMPION', 30, 186);
 
     doc.save(`Besto-Pesto-Super-Licence.pdf`);
   };
@@ -93,30 +106,44 @@ export function DriverLicence({ onDone, progress: _progress }: { onDone: () => v
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
-          className="hud-panel bg-carbon-950/95 max-w-xl w-full p-8 relative overflow-hidden"
+          className="hud-panel bg-carbon-950/95 max-w-xl w-full p-7 relative overflow-hidden border-l-[3px] border-racing-red"
         >
+          {/* status pill */}
+          <div className="absolute top-6 right-7 flex items-center gap-2 font-telemetry text-[9px] tracking-widest uppercase text-racing-green">
+            <span className="w-1.5 h-1.5 rounded-full bg-racing-green animate-pulse" />
+            Valid · Unlimited
+          </div>
+
           <div className="font-telemetry text-[9px] tracking-[0.25em] uppercase text-carbon-500 mb-2">
             Official Document · Parc Fermé
           </div>
-          <h3 className="font-display text-xl text-carbon-50 tracking-wide leading-tight">
+          <h3 className="font-display text-xl text-carbon-50 tracking-wide leading-tight max-w-[80%]">
             Fédération Internationale de l'Automobile
           </h3>
-          <p className="font-telemetry text-racing-red text-[10px] tracking-widest uppercase mt-1 mb-6">
+          <p className="font-telemetry text-racing-red text-[10px] tracking-widest uppercase mt-1 mb-5">
             Super Licence · Class Unlimited
           </p>
 
-          <div className="border-t border-carbon-800 pt-5 space-y-3">
-            {FIELDS.map((f) => (
-              <div key={f.label} className="flex items-baseline justify-between border-b border-carbon-800 pb-2">
-                <span className="font-telemetry text-[9px] text-carbon-500 uppercase tracking-widest">
-                  {f.label}
-                </span>
-                <span className="font-display text-base text-carbon-100">{f.value}</span>
-              </div>
-            ))}
+          <div className="border-t border-carbon-800 pt-5 flex gap-6">
+            {/* Photo placeholder */}
+            <div className="w-24 h-28 bg-carbon-900 border border-carbon-800 rounded-md flex items-center justify-center flex-shrink-0">
+              <span className="font-telemetry text-carbon-600 text-[9px] tracking-widest uppercase">Photo</span>
+            </div>
+
+            {/* Fields */}
+            <div className="flex-1 space-y-2.5">
+              {FIELDS.map((f) => (
+                <div key={f.label} className="flex items-baseline justify-between border-b border-carbon-800 pb-1.5">
+                  <span className="font-telemetry text-[9px] text-carbon-500 uppercase tracking-widest">
+                    {f.label}
+                  </span>
+                  <span className="font-display text-base text-carbon-100">{f.value}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-5 flex items-center justify-between">
+          <div className="border-t border-carbon-800 mt-5 pt-3 flex items-center justify-between">
             <p className="font-telemetry text-[9px] text-carbon-600 tracking-wide">
               Issued by the FMF · no expiry
             </p>
