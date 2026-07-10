@@ -153,7 +153,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 2',
     title: 'Haunted House',
     tag: 'horror',
-    message: 'You argued that Percy could absolutely beat a Formula 1 driver in a chariot race. I said the driver would win. We did not speak for an hour. I was right. You were also right. The chariot was the real winner.',
+    message: 'yad hai ham mere bday ke party ke liye eternity gye the vha pe horror house me kya phati thi hamari, kya chillaye the ham😂. vha pe sb hamko dekh ke dar gye the, shyd bhoot bhi dar gaya hoga',
     image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
     placeholder: 'Photo: Replace with your Percy Jackson book screenshot or our chat about it.',
   },
