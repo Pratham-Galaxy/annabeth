@@ -273,7 +273,7 @@ export const TROPHIES = [
     id: 'pitcrew',
     title: 'Ultimate Pit Crew',
     material: 'silver',
-    story: 'Every driver needs a team that gets them back on track. Whenever life got messy, you were always there to help, encourage, or simply stay. Thank you for always being in my corner..',
+    story: 'Every driver needs a team that gets them back on track. Whenever life got messy, you were always there to help, encourage, or simply stay. Thank you for always being in my corner.',
   },
 ] as const;
 
