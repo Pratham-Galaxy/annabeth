@@ -271,7 +271,7 @@ export const TROPHIES = [
   },
   {
     id: 'pitcrew',
-    title: 'Fastest Smile',
+    title: 'Ultimate Pit Crew',
     material: 'silver',
     story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
   },
