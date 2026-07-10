@@ -136,7 +136,7 @@ export const TELEMETRY_DATA = [
 
 export const DRS_SECRET = {
   nickname: 'Kero',
-  meaning: 'A flower that symbolises patience and a love that does not fade. Also the closest I could get to spelling your name as something only I am allowed to call you.',
+  meaning: 'u have to google it to know what it means, but its cute and funny , mst suit krra tujh pe, eheh😝. i can call u kero-chan, but i am definelty sure tujhe ye psnd nhi ayega😂😂',
 };
 
 export const MEMORY_CORNERS = [
