@@ -171,7 +171,7 @@ export const MEMORY_CORNERS = [
     id: 'm4',
     corner: 'Turn 4',
     title: 'Something u dont know',
-    tag: 'Inside Jokes',
+    tag: 'Unknown',
     message: 'We have a vault of jokes that would not make sense to anyone else on this planet. That is not a bug. That is the entire point. If anyone ever decodes them, the friendship contract is void.',
     image: 'https://images.pexels.com/photos/3002719/pexels-photo-3002719.jpeg',
     placeholder: 'Screenshot: Replace with one of our unhinged chat screenshots.',
