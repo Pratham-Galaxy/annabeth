@@ -153,7 +153,7 @@ export const MEMORY_CORNERS = [
     id: 'm2',
     corner: 'Turn 2',
     title: 'Haunted House',
-    tag: 'Percy Jackson',
+    tag: 'horror',
     message: 'You argued that Percy could absolutely beat a Formula 1 driver in a chariot race. I said the driver would win. We did not speak for an hour. I was right. You were also right. The chariot was the real winner.',
     image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
     placeholder: 'Photo: Replace with your Percy Jackson book screenshot or our chat about it.',
