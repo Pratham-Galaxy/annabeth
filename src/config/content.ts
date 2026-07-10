@@ -192,7 +192,7 @@ export const MEMORY_CORNERS = [
     tag: 'Emotional',
     message: 'I promised you that one day I would be on a real podium and you would be in my corner. The podium changed shape. The corner did not. You are still there.',
     image: 'https://images.pexels.com/photos/3647985/pexels-photo-3647985.jpeg',
-    placeholder: 'Photo: Replace with a photo of us together.',
+    placeholder: 'Our Redemption Arc',
   },
 ] as const;
 
