@@ -181,7 +181,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 5',
     title: 'My Best Memory of US',
     tag: 'love',
-    message: '',
+    message: 'like when u told me ki bhai mai a jau kya milne, i said ha aja, i thought mjk krri, but when u send me tkt, i was like fuck, ye shi me ari, i was so so happy at the momemt pe, parth call pe tha, he was shocked too, then next day tu ayi i saw u, bhai i was so so sooo happy to see u, tune dekhi hogi meri smile, then u hug me, it was such a beautiful moment',
     image: 'https://images.pexels.com/photos/7187184/pexels-photo-7187184.jpeg',
     placeholder: 'U came to meet me',
   },
