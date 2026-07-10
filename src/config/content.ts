@@ -173,7 +173,7 @@ export const MEMORY_CORNERS = [
     title: 'Something u dont know',
     tag: 'Unknown',
     message: 'u remember there was time tu hostel me thi no phone, no contact, we used to talk after months, shyd ek bar to 6-7 mahine tk bat nhi kr paye the, last hi year. I missed u duffer',
-    image: 'https://images.pexels.com/photos/3002719/pexels-photo-3002719.jpeg',
+    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
     placeholder: 'Duffer khi ki!!!!!!!',
   },
   {
