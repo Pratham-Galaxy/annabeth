@@ -263,6 +263,18 @@ export const TROPHIES = [
     material: 'silver',
     story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
   },
+  {
+    id: 'survivor',
+    title: 'Engineer Survivor',
+    material: 'silver',
+    story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
+  },
+  {
+    id: 'survivor',
+    title: 'Engineer Survivor',
+    material: 'silver',
+    story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
+  },
 ] as const;
 
 export const TROPHY_MATERIAL: Record<string, { base: string; metal: string; rim: string }> = {
