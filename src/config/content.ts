@@ -16,7 +16,8 @@ export const TURN_ONE_MESSAGE = {
 };
 
 export const TURN_TWO_LETTER = {
-  text: `Dear Pestos,
+  text: `Dear Pestos
+  
 `,
   signature: 'Your Race Engineer',
 };
