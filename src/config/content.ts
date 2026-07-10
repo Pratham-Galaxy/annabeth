@@ -154,7 +154,7 @@ export const MEMORY_CORNERS = [
     corner: 'Turn 2',
     title: 'Haunted House',
     tag: 'horror',
-    message: 'You argued that Percy could absolutely beat a Formula 1 driver in a chariot race. I said the driver would win. We did not speak for an hour. I was right. You were also right. The chariot was the real winner.',
+    message: 'yad hai mere bday ki party ke liye eternity gye the, vha pe horror house me kitti phati thi hamari, kitta chike the ham, sab hamko dekh ke dar gye the mujhe lgta bhoot bhi dar gaya hoga, kitta maza aya tha😂',
     image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
     placeholder: 'Phasmophobia',
   },
