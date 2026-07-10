@@ -252,6 +252,20 @@ export const TROPHIES = [
     story: 'Awarded for services to unpredictability. The race directors cannot predict you. Neither can I. I would not have it any other way.',
   },
   {
+  id: 'safetycar',
+  title: 'Safety Car',
+  material: 'gold',
+  story:
+    'For slowing me down whenever I was overthinking, panicking, or making terrible decisions. Somehow, you always know exactly when to tell me to breathe and when to laugh at me instead.',
+},
+{
+  id: 'fastestlap',
+  title: 'Fastest Smile',
+  material: 'silver',
+  story:
+    'Awarded to the one person who can improve the team's mood in record time. One conversation with you is usually enough to turn a bad day into a better one.',
+},
+  {
     id: 'contract',
     title: 'Lifetime Contract',
     material: 'gold',
