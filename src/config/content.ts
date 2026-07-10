@@ -146,7 +146,7 @@ export const MEMORY_CORNERS = [
     title: 'The First Race',
     tag: 'pizza',
     message: 'yad hai first time ham mile the, mai shashank neware pizza khane gye the, tu ayi thi vha, it was awkard for me, i didnt even look at u, but ab dekh bhai full bakchodi, random vcs, calls, kitta bak bak krte ham',
-    image: 'https://www.istockphoto.com/photos/cheesy-pizza',
+    image: 'https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg',
     placeholder: 'Pizza',
   },
   {
