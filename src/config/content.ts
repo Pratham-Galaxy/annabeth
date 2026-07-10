@@ -271,7 +271,7 @@ export const TROPHIES = [
   },
   {
     id: 'survivor',
-    title: 'Engineer Survivor',
+    title: 'Fastest Smile',
     material: 'silver',
     story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
   },
