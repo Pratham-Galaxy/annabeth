@@ -16,18 +16,7 @@ export const TURN_ONE_MESSAGE = {
 };
 
 export const TURN_TWO_LETTER = {
-  text: `Dear Besto Pesto,
-
-I built you a race track instead of a card.
-
-Every corner is a memory I didn't want to forget.
-You watched a sport you barely understood, just so I'd have someone to talk to.
-
-That's not a hobby. That's a teammate.
-
-Happy birthday, Driver. The garage is always open.
-
-Your Race Engineer`,
+  text: ``,
   signature: 'Your Race Engineer',
 };
 
