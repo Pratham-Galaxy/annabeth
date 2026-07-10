@@ -361,3 +361,16 @@ export const VIBE_TRACE = {
 
 // 0-100 scale, same length as VIBE_TRACE phases — positive-leaning values mean Aastha brought more chaos that phase.
 export const DELTA_TRACE = [58, 66, 40, 74, 52, 60];
+
+export const HYDRATION_DIALOGUES = [
+  "That's the spirit, driver! Keep those fluids flowing!",
+  "Smooth pit stop! One more lap hydrated ✅",
+  "No dehydration penalties today! 💧🏎️",
+  // ... more cute ones
+];
+
+export const HYDRATION_ACHIEVEMENTS = [
+  { id: "first-sip", title: "First Sip" },
+  { id: "rookie-hydrator", title: "Rookie Hydrator" },
+  // ... etc
+];
