@@ -16,9 +16,18 @@ export const TURN_ONE_MESSAGE = {
 };
 
 export const TURN_TWO_LETTER = {
-  text: `Dear Pestos
-  
-`,
+  text: `Dear Besto Pesto,
+
+I built you a race track instead of a card.
+
+Every corner is a memory I didn't want to forget.
+You watched a sport you barely understood, just so I'd have someone to talk to.
+
+That's not a hobby. That's a teammate.
+
+Happy birthday, Driver. The garage is always open.
+
+Your Race Engineer`,
   signature: 'Your Race Engineer',
 };
 
@@ -135,8 +144,8 @@ export const TELEMETRY_DATA = [
 ] as const;
 
 export const DRS_SECRET = {
-  nickname: 'Kero',
-  meaning: 'u have to google it to know what it means, but its cute and funny , mst suit krra tujh pe, eheh😝. i can call u kero-chan, but i am definelty sure tujhe ye psnd nhi ayega😂😂',
+  nickname: 'Anabeth',
+  meaning: 'A flower that symbolises patience and a love that does not fade. Also the closest I could get to spelling your name as something only I am allowed to call you.',
 };
 
 export const MEMORY_CORNERS = [
@@ -144,55 +153,55 @@ export const MEMORY_CORNERS = [
     id: 'm1',
     corner: 'Turn 1',
     title: 'The First Race',
-    tag: 'pizza',
-    message: 'yad hai first time ham mile the, mai shashank neware pizza khane gye the, tu ayi thi vha, it was awkard for me, i didnt even look at u, but ab dekh bhai full bakchodi, random vcs, calls, kitta bak bak krte ham',
+    tag: 'F1',
+    message: 'The first time you sat through a race with me. You asked what DRS was. I explained for 20 minutes. You said "cool" and asked for snacks. I knew then this was going to be a forever thing.',
     image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'Pizza',
+    placeholder: 'Photo: Replace with a screenshot of the first race we watched together.',
   },
   {
     id: 'm2',
     corner: 'Turn 2',
-    title: 'Haunted House',
-    tag: 'horror',
-    message: 'yad hai mere bday ki party ke liye eternity gye the, vha pe horror house me kitti phati thi hamari, kitta chike the ham, sab hamko dekh ke dar gye the mujhe lgta bhoot bhi dar gaya hoga, kitta maza aya tha😂',
-    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'Phasmophobia',
+    title: 'The Percy Jackson Incident',
+    tag: 'Percy Jackson',
+    message: 'You argued that Percy could absolutely beat a Formula 1 driver in a chariot race. I said the driver would win. We did not speak for an hour. I was right. You were also right. The chariot was the real winner.',
+    image: 'https://images.pexels.com/photos/2697904/pexels-photo-2697904.jpeg',
+    placeholder: 'Photo: Replace with your Percy Jackson book screenshot or our chat about it.',
   },
   {
     id: 'm3',
     corner: 'Turn 3',
-    title: '3 AM',
+    title: 'The 2am Telemetry',
     tag: 'Late Night',
-    message: 'woh din yad hai, ham almost 6 hr bat kiye the, i was shocked ham itta kaise bol skte but ab to normal ho gaya hai, mujhe acche se yad hai ham anjali ke creepy snaps dekhe the usme, us bkl ne hath kat di thi, plus pure gossips',
+    message: 'You called at 2am to ask if I was okay. I said yes. You stayed on the call anyway for an hour and a half saying nothing. It was the most important conversation we ever had.',
     image: 'https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg',
-    placeholder: 'Creeps',
+    placeholder: 'Photo: Replace with a screenshot of that late call log.',
   },
   {
     id: 'm4',
     corner: 'Turn 4',
-    title: 'Something u dont know',
-    tag: 'Unknown',
-    message: 'u remember there was time tu hostel me thi no phone, no contact, we used to talk after months, shyd ek bar to 6-7 mahine tk bat nhi kr paye the, last hi year. I missed u duffer',
-    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'Duffer khi ki!!!!!!!',
+    title: 'The Inside Joke Vault',
+    tag: 'Inside Jokes',
+    message: 'We have a vault of jokes that would not make sense to anyone else on this planet. That is not a bug. That is the entire point. If anyone ever decodes them, the friendship contract is void.',
+    image: 'https://images.pexels.com/photos/3002719/pexels-photo-3002719.jpeg',
+    placeholder: 'Screenshot: Replace with one of our unhinged chat screenshots.',
   },
   {
     id: 'm5',
     corner: 'Turn 5',
-    title: 'My Best Memory of US',
-    tag: 'love',
-    message: 'like when u told me ki bhai mai a jau kya milne, i said ha aja, i thought mjk krri, but when u send me tkt, i was like fuck, ye shi me ari, i was so so happy at the momemt, parth call pe tha, he was shocked too, then next day tu ayi i saw u, bhai i was so so sooo happy to see u, tune dekhi hogi meri smile, then u hug me, it was such a beautiful moment🤌. phir pura din ham acche se ghume, aaisa lg rha tha ham kabhi ladte hi nhi hai, itta pyar kb se a gaya',
-    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'U came to meet me',
+    title: 'The Engineer Roast',
+    tag: 'Funny',
+    message: 'You once described my life as "controlled chaos with a pit stop budget." I have never recovered. I now think about that sentence during real pit stops.',
+    image: 'https://images.pexels.com/photos/7187184/pexels-photo-7187184.jpeg',
+    placeholder: 'Photo: Replace with a meme you sent me that I think about daily.',
   },
   {
     id: 'm6',
     corner: 'Turn 6',
     title: 'The Podium Promise',
     tag: 'Emotional',
-    message: 'Our recent fight, it was such a childish behaviour of me, meri life itti fucked up ho gyi thi, but u stayed, even after so many fights u came back, i never thought that would u  came back after my rudy behaviour, gomen nasai kero-chan. uk jis din tera call aya tha, i was in living room, meri life ki sbse biggest smile ayi thi us din, after seeing ur name, khushi khushi me call hi nhi uthaya tha😂. everyone was like kya hua, aaise hs kyu rha hai😏',
-    image: 'https://images.pexels.com/photos/2549298/pexels-photo-2549298.jpeg',
-    placeholder: 'Our Redemption Arc',
+    message: 'I promised you that one day I would be on a real podium and you would be in my corner. The podium changed shape. The corner did not. You are still there.',
+    image: 'https://images.pexels.com/photos/3647985/pexels-photo-3647985.jpeg',
+    placeholder: 'Photo: Replace with a photo of us together.',
   },
 ] as const;
 
@@ -257,18 +266,11 @@ export const TROPHIES = [
     material: 'gold',
     story: 'No expiry. No exit clause. No trade window. You are stuck with this team forever. Sign here, here, and here.',
   },
-  
   {
-    id: 'safetycar',
-    title: 'Safety Car',
-    material: 'gold',
-    story: 'For slowing me down whenever I was overthinking, panicking, or making terrible decisions. Somehow, you always know exactly when to tell me to breathe and when to laugh at me instead.',
-  },
-  {
-    id: 'pitcrew',
-    title: 'Ultimate Pit Crew',
+    id: 'survivor',
+    title: 'Engineer Survivor',
     material: 'silver',
-    story: 'Every driver needs a team that gets them back on track. Whenever life got messy, you were always there to help, encourage, or simply stay. Thank you for always being in my corner.',
+    story: 'For surviving every single one of my 2am monologues about tyre strategy. This is the highest honour in the sport.',
   },
 ] as const;
 
