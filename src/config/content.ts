@@ -180,7 +180,7 @@ export const MEMORY_CORNERS = [
     id: 'm5',
     corner: 'Turn 5',
     title: 'My Best Memory of US',
-    tag: 'Funny',
+    tag: 'love',
     message: 'You once described my life as "controlled chaos with a pit stop budget." I have never recovered. I now think about that sentence during real pit stops.',
     image: 'https://images.pexels.com/photos/7187184/pexels-photo-7187184.jpeg',
     placeholder: 'Photo: Replace with a meme you sent me that I think about daily.',
